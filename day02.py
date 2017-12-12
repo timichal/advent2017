@@ -4,7 +4,7 @@ with open("day02") as file:
 		numbers.append([int(x) for x in line.strip().split()])
 
 # part 1
-print(sum([int(max(row)) - int(min(row)) for row in numbers]))
+print(sum([max(row) - min(row) for row in numbers]))
 
 # part 2
 result = 0
